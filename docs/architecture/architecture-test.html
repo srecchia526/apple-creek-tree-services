@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apple Creek CSS Architecture Test</title>
+  <link rel="stylesheet" href="../../css/apple-creek-architecture.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell site-nav">
+      <a class="site-nav__brand" href="#">Apple Creek Tree Services</a>
+      <nav aria-label="Primary">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" aria-current="page" href="#">Home</a></li>
+          <li><a class="site-nav__link" href="#">Services</a></li>
+          <li><a class="site-nav__link" href="#">Gallery</a></li>
+          <li><a class="site-nav__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="site-shell stack">
+        <h1>Professional Tree Care</h1>
+        <p>Architecture test page for the Apple Creek capstone.</p>
+        <div class="cluster">
+          <a class="button" href="#">Request an Estimate</a>
+          <a class="button button--secondary" href="#">View Services</a>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="site-shell card-grid">
+        <article class="service-card"><h2 class="service-card__title">Tree Removal</h2><p>Service card test content.</p></article>
+        <article class="service-card"><h2 class="service-card__title">Trimming &amp; Pruning</h2><p>Service card test content.</p></article>
+        <article class="service-card"><h2 class="service-card__title">Stump Grinding</h2><p>Service card test content.</p></article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="site-shell split-layout">
+        <div class="callout"><h2 class="callout__title">Storm Damage</h2><p>Callout test.</p></div>
+        <form class="stack">
+          <div class="form-field">
+            <label class="form-field__label" for="email">Email</label>
+            <input class="form-field__control" id="email" aria-invalid="true" value="test">
+            <span class="form-field__help">Example invalid state.</span>
+          </div>
+          <button class="button" type="button" disabled>Disabled Button</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="site-shell"><p>Apple Creek Tree Services</p></div></footer>
+</body>
+</html>

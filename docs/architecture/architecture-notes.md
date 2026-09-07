@@ -38,9 +38,10 @@ The print block is intended mainly for service information and estimate-related 
 
 ## Browser Checks
 
-The architecture should be checked at narrow widths around 375–600 px and wide widths around 1200–1440 px. Keyboard focus, current-page navigation, invalid and disabled form controls, and print preview should also be checked.
+## Browser Checks
 
-Expected responsive behavior: the card grid uses `auto-fit`, while the split layout changes from one column to two columns at 48rem.
+I checked the architecture in Chrome at narrow widths of 375 px and 600 px and at wide widths of 1200 px and 1440 px. I also tested keyboard navigation to confirm the focus-visible styles were clear, checked the current-page navigation state and the invalid form-field state, and reviewed the page in print preview. The layouts remained readable at each viewport size, the responsive changes worked as expected, and the print styles removed unnecessary navigation, form controls, buttons, and footer content while keeping the important service information easy to read.
+
 
 ## Refactoring Evidence
 

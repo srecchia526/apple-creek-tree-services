@@ -3,67 +3,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apple Creek Tree Services responsive capstone layout practice.">
   <title>Apple Creek Tree Services</title>
-  <link rel="stylesheet" href="css/apple-creek-architecture.css">
+  <link rel="stylesheet" href="css/apple-creek-responsive.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="site-shell site-nav">
-      <a class="site-nav__brand" href="index.html">Apple Creek Tree Services</a>
+      <a class="site-nav__brand" href="#home">Apple Creek Tree Services</a>
       <nav aria-label="Primary navigation">
         <ul class="site-nav__list">
-          <li><a class="site-nav__link" aria-current="page" href="index.html">Home</a></li>
+          <li><a class="site-nav__link" aria-current="page" href="#home">Home</a></li>
           <li><a class="site-nav__link" href="#services">Services</a></li>
-          <li><a class="site-nav__link" href="#contact">Contact</a></li>
+          <li><a class="site-nav__link" href="#resources">Resources</a></li>
+          <li><a class="site-nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="site-nav__link" href="#estimate">Request Estimate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="site-shell stack">
-        <h1>Apple Creek Tree Services</h1>
-        <p>Reliable tree care for homeowners and property owners.</p>
-        <div>
-          <a class="button" href="#contact">Request an Estimate</a>
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="site-shell hero-layout">
+        <div class="stack">
+          <p class="eyebrow">Tree care built around the property</p>
+          <h1>Professional tree care without a one-size-fits-all layout.</h1>
+          <p class="hero__lede">Apple Creek Tree Services helps property owners plan tree removal, trimming, stump work, and storm cleanup with clear information and an easy estimate request.</p>
+          <div class="cluster">
+            <a class="button" href="#estimate">Request an Estimate</a>
+            <a class="button button--secondary" href="#services">View Services</a>
+          </div>
         </div>
+
+        <aside class="hero-panel stack" aria-labelledby="planning-title">
+          <p class="eyebrow">Planning first</p>
+          <h2 id="planning-title">Start with the job, access, and site conditions.</h2>
+          <p>Tree work changes from property to property. The estimate form gives customers room to describe the work before scheduling.</p>
+        </aside>
       </div>
     </section>
 
-    <section class="section" id="services">
+    <section class="section" id="services" aria-labelledby="services-title">
       <div class="site-shell stack">
-        <h2>Services</h2>
-        <div class="card-grid">
+        <div class="section-heading stack">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Core tree-care services</h2>
+          <p>These cards use an intrinsic grid, so the number of columns changes when the cards themselves need more room.</p>
+        </div>
+
+        <div class="service-grid">
           <article class="service-card">
             <h3 class="service-card__title">Tree Removal</h3>
-            <p>Removal of unwanted, damaged, or unsafe trees.</p>
+            <p>Removal planning for trees that are damaged, declining, hazardous, or in the way of a property project.</p>
+            <a class="service-card__link" href="#estimate">Ask about removal</a>
           </article>
 
           <article class="service-card">
-            <h3 class="service-card__title">Trimming and Pruning</h3>
-            <p>Routine trimming to improve tree health, shape, and safety.</p>
+            <h3 class="service-card__title">Trimming &amp; Pruning</h3>
+            <p>Selective trimming to manage clearance, improve structure, and remove damaged or unwanted growth.</p>
+            <a class="service-card__link" href="#estimate">Ask about trimming</a>
           </article>
 
           <article class="service-card">
             <h3 class="service-card__title">Stump Grinding</h3>
-            <p>Grinding and cleanup for stumps left after tree removal.</p>
+            <p>Stump-work planning after removal or for existing stumps that interfere with mowing, access, or future landscaping.</p>
+            <a class="service-card__link" href="#estimate">Ask about stump work</a>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Storm Cleanup</h3>
+            <p>Assessment and cleanup planning for fallen trees, damaged limbs, and storm debris. Availability is confirmed when the request is reviewed.</p>
+            <a class="service-card__link" href="#estimate">Describe storm damage</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="site-shell site-shell--narrow stack">
-        <h2>Contact</h2>
-        <p>Contact Apple Creek Tree Services to ask a question or request an estimate.</p>
+    <section class="section section--muted" id="resources" aria-labelledby="resources-title">
+      <div class="site-shell stack">
+        <div class="section-heading stack">
+          <p class="eyebrow">Reusable component</p>
+          <h2 id="resources-title">The same resource card in two layout contexts</h2>
+          <p>The resource card responds to the width of its own parent container, not to the viewport alone.</p>
+        </div>
+
+        <div class="resource-layout">
+          <aside class="resource-sidebar stack" aria-label="Quick resource">
+            <div class="resource-shell">
+              <article class="resource-card">
+                <div class="resource-card__marker" aria-hidden="true">1</div>
+                <div class="resource-card__body stack">
+                  <p class="eyebrow">Before the estimate</p>
+                  <h3>Take a few property photos</h3>
+                  <p>Wide and close views can help explain access, nearby structures, and the tree or stump involved.</p>
+                  <a class="button button--secondary" href="#estimate">Open estimate form</a>
+                </div>
+              </article>
+            </div>
+          </aside>
+
+          <div class="resource-main stack">
+            <div class="resource-shell">
+              <article class="resource-card">
+                <div class="resource-card__marker" aria-hidden="true">2</div>
+                <div class="resource-card__body stack">
+                  <p class="eyebrow">Planning information</p>
+                  <h3>Describe what is around the work area</h3>
+                  <p>Driveways, fences, sheds, utility lines, slopes, and tight access can affect how a job is approached. The card changes to a side-by-side layout when its own container has enough room.</p>
+                  <a class="button" href="#estimate">Request an estimate</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="site-shell stack">
+        <div class="section-heading stack">
+          <p class="eyebrow">Project gallery</p>
+          <h2 id="gallery-title">Flexible media layout</h2>
+          <p>Final project photos are still being selected. These placeholders keep the gallery structure responsive without inventing completed jobs.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="media-card">
+            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future tree removal project photo">Tree removal photo</div>
+            <div class="media-card__body stack">
+              <h3>Tree Removal</h3>
+              <p>Future project image and verified description.</p>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future trimming project photo">Trimming photo</div>
+            <div class="media-card__body stack">
+              <h3>Trimming &amp; Pruning</h3>
+              <p>Future project image and verified description.</p>
+            </div>
+          </article>
+
+          <article class="media-card">
+            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future cleanup project photo">Cleanup photo</div>
+            <div class="media-card__body stack">
+              <h3>Cleanup</h3>
+              <p>Future project image and verified description.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="estimate" aria-labelledby="estimate-title">
+      <div class="site-shell estimate-layout">
+        <div class="stack">
+          <p class="eyebrow">Request an estimate</p>
+          <h2 id="estimate-title">Tell us what you are working with.</h2>
+          <p>The form stays single-column by default and moves into a wider two-column page layout only when the written content and controls have enough room.</p>
+
+          <div class="callout">
+            <h3 class="callout__title">Storm damage?</h3>
+            <p>Include what fell or broke, whether access is blocked, and any nearby structures. Response availability should be confirmed rather than assumed.</p>
+          </div>
+        </div>
+
+        <form class="estimate-form stack" action="#" method="post">
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-field__label" for="name">Name</label>
+              <input class="form-field__control" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="email">Email</label>
+              <input class="form-field__control" id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="phone">Phone</label>
+              <input class="form-field__control" id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="service">Service</label>
+              <select class="form-field__control" id="service" name="service">
+                <option>Tree removal</option>
+                <option>Trimming and pruning</option>
+                <option>Stump grinding</option>
+                <option>Storm cleanup</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field--wide">
+              <label class="form-field__label" for="details">Job details</label>
+              <textarea class="form-field__control" id="details" name="details" rows="6" placeholder="Describe the tree, stump, access, nearby structures, or storm damage."></textarea>
+              <span class="form-field__help">Do not include sensitive personal information.</span>
+            </div>
+          </div>
+
+          <button class="button" type="submit">Send Request</button>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="site-shell">
-      <p>&copy; 2026 Apple Creek Tree Services</p>
+    <div class="site-shell footer-layout">
+      <div class="stack">
+        <strong>Apple Creek Tree Services</strong>
+        <p>Capstone responsive layout system.</p>
+      </div>
+      <a href="#home">Back to top</a>
     </div>
   </footer>
 </body>

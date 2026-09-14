@@ -1,0 +1,662 @@
+/* =========================================================
+   Apple Creek Tree Services
+   Production Responsive Layout System
+   Extended from the Module 2 CSS architecture.
+   Layer order is intentionally preserved.
+   ========================================================= */
+@layer reset, base, layout, components, utilities, states, overrides;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol,
+  figure {
+    margin: 0;
+  }
+
+  img,
+  picture {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer base {
+  :root {
+    /* Existing Module 2 design-token direction */
+    --color-brand-700: #284f2e;
+    --color-brand-600: #356b3f;
+    --color-brand-100: #e9f2e8;
+    --color-accent-500: #c96d24;
+    --color-accent-100: #fff1e5;
+    --color-ink-900: #1f2a22;
+    --color-ink-700: #445047;
+    --color-surface-000: #ffffff;
+    --color-surface-050: #f7f8f5;
+    --color-border-200: #d5ddd4;
+    --color-danger-600: #a43a32;
+    --color-success-600: #2f6b3a;
+
+    --font-sans: Arial, Helvetica, sans-serif;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: clamp(1.05rem, 1rem + 0.2vw, 1.2rem);
+    --text-xl: clamp(1.3rem, 1.15rem + 0.5vw, 1.65rem);
+    --text-2xl: clamp(1.75rem, 1.45rem + 1vw, 2.4rem);
+    --text-hero: clamp(2.25rem, 1.7rem + 2.6vw, 4.5rem);
+    --leading-body: 1.6;
+    --leading-tight: 1.15;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --section-space: clamp(2.5rem, 1.8rem + 3vw, 5.5rem);
+    --shell-gutter: clamp(1rem, 0.7rem + 1.5vw, 2rem);
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.625rem;
+    --radius-lg: 1rem;
+    --border-thin: 1px solid var(--color-border-200);
+
+    --content-max: 72rem;
+    --content-narrow: 48rem;
+    --reading-measure: 68ch;
+
+    --focus-color: var(--color-accent-500);
+    --focus-ring: 3px solid var(--focus-color);
+    --focus-offset: 3px;
+
+    --button-bg: var(--color-brand-700);
+    --button-color: var(--color-surface-000);
+    --button-bg-hover: var(--color-accent-500);
+    --button-color-hover: var(--color-ink-900);
+    --button-radius: var(--radius-md);
+    --button-pad-block: 0.75rem;
+    --button-pad-inline: 1.1rem;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: var(--color-surface-000);
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    line-height: var(--leading-body);
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--color-brand-700);
+    line-height: var(--leading-tight);
+  }
+
+  h1 { font-size: var(--text-hero); }
+  h2 { font-size: var(--text-2xl); }
+  h3 { font-size: var(--text-xl); }
+
+  p {
+    max-inline-size: var(--reading-measure);
+  }
+
+  a {
+    color: var(--color-brand-700);
+    text-underline-offset: 0.15em;
+  }
+}
+
+@layer layout {
+  /* Logical wrapper: flexible inline size + auto inline margins. */
+  .site-shell {
+    inline-size: min(calc(100% - (2 * var(--shell-gutter))), var(--content-max));
+    margin-inline: auto;
+  }
+
+  .site-shell--narrow {
+    inline-size: min(calc(100% - (2 * var(--shell-gutter))), var(--content-narrow));
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: var(--section-space);
+  }
+
+  .stack {
+    display: grid;
+    gap: var(--space-5);
+  }
+
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .hero-layout,
+  .estimate-layout {
+    display: grid;
+    gap: clamp(1.5rem, 1rem + 2vw, 3.5rem);
+  }
+
+  /* Advanced Grid pattern 1: intrinsic service cards. */
+  .service-grid {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+    align-items: stretch;
+  }
+
+  /* Advanced Grid pattern 2: intrinsic gallery cards. */
+  .gallery-grid {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
+  }
+
+  /* Advanced Grid pattern 3: a bounded resource sidebar + flexible main area.
+     The sidebar gets an intentional readable width instead of shrinking to
+     its min-content width when the two-column layout turns on. */
+  .resource-layout {
+    display: grid;
+    gap: var(--space-6);
+  }
+
+  .resource-sidebar,
+  .resource-main {
+    min-inline-size: 0;
+  }
+
+  .resource-sidebar {
+    inline-size: 100%;
+  }
+
+  .form-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  }
+
+  .form-field--wide {
+    grid-column: 1 / -1;
+  }
+
+  .footer-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5);
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Content-driven breakpoint: around 47rem the navigation/hero copy and
+     estimate controls have enough inline room for a second column without
+     creating narrow text measures or compressed form fields. */
+  @media (min-width: 47rem) {
+    .hero-layout {
+      grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.65fr);
+      align-items: center;
+    }
+
+    .estimate-layout {
+      grid-template-columns: minmax(0, 0.8fr) minmax(24rem, 1.2fr);
+      align-items: start;
+    }
+  }
+
+  /* Content-driven breakpoint: the quick-resource card and main resource
+     fit cleanly side by side only once there is about 58rem of content space.
+     A bounded 18–20rem first track prevents the sidebar from collapsing to
+     its min-content width in Chromium. */
+  @media (min-width: 58rem) {
+    .resource-layout {
+      grid-template-columns: minmax(18rem, 20rem) minmax(0, 1fr);
+      align-items: start;
+    }
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    inset-block-start: var(--space-2);
+    inset-inline-start: var(--space-2);
+    z-index: 10;
+    padding-block: var(--space-2);
+    padding-inline: var(--space-3);
+    background: var(--color-surface-000);
+    color: var(--color-brand-700);
+    border-radius: var(--radius-sm);
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+
+  .site-header {
+    background: var(--color-brand-700);
+    color: var(--color-surface-000);
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-block: var(--space-4);
+  }
+
+  .site-nav__brand,
+  .site-nav__link {
+    color: var(--color-surface-000);
+    text-decoration: none;
+  }
+
+  .site-nav__brand {
+    font-weight: 700;
+  }
+
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .site-nav__link {
+    display: inline-block;
+    padding-block: 0.55rem;
+    padding-inline: 0.8rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .hero {
+    background: linear-gradient(135deg, var(--color-brand-100), var(--color-surface-000));
+  }
+
+  .hero__lede {
+    font-size: var(--text-lg);
+  }
+
+  .hero-panel {
+    padding-block: var(--space-5);
+    padding-inline: var(--space-5);
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-lg);
+  }
+
+  .section--muted {
+    background: var(--color-surface-050);
+  }
+
+  .section--accent {
+    background: var(--color-brand-100);
+  }
+
+  .section-heading {
+    max-inline-size: 52rem;
+  }
+
+  .eyebrow {
+    color: var(--color-accent-500);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .button {
+    display: inline-block;
+    padding-block: var(--button-pad-block);
+    padding-inline: var(--button-pad-inline);
+    background: var(--button-bg);
+    color: var(--button-color);
+    border: 0;
+    border-radius: var(--button-radius);
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+  }
+
+  .button--secondary {
+    --button-bg: var(--color-surface-000);
+    --button-color: var(--color-brand-700);
+    border: 2px solid var(--color-brand-700);
+  }
+
+  /* Default service-card fallback: aligned internal rows without subgrid. */
+  .service-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: var(--space-3);
+    padding-block: var(--space-5);
+    padding-inline: var(--space-5);
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-lg);
+  }
+
+  .service-card__title,
+  .service-card__link {
+    margin: 0;
+  }
+
+  .service-card__link {
+    font-weight: 700;
+  }
+
+  /* Feature query: when subgrid exists, cards can inherit row tracks from
+     the service grid. The default three-row card remains the fallback. */
+  @supports (grid-template-rows: subgrid) {
+    .service-grid {
+      grid-auto-rows: auto;
+    }
+
+    .service-card {
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+    }
+  }
+
+  .callout {
+    padding-block: var(--space-5);
+    padding-inline: var(--space-5);
+    background: var(--color-accent-100);
+    border-inline-start: 0.4rem solid var(--color-accent-500);
+    border-radius: var(--radius-sm);
+  }
+
+  .callout__title {
+    margin-block-end: var(--space-2);
+    color: var(--color-ink-900);
+  }
+
+  /* Query container is the shell so the card reacts to component space. */
+  .resource-shell {
+    container-type: inline-size;
+    inline-size: 100%;
+    min-inline-size: 0;
+  }
+
+  .resource-card {
+    display: grid;
+    gap: var(--space-4);
+    padding-block: var(--space-5);
+    padding-inline: var(--space-5);
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-lg);
+  }
+
+  .resource-card__marker {
+    display: grid;
+    place-items: center;
+    inline-size: 3rem;
+    block-size: 3rem;
+    border-radius: 50%;
+    background: var(--color-accent-500);
+    color: var(--color-ink-900);
+    font-weight: 700;
+  }
+
+  .resource-card .button {
+    justify-self: start;
+  }
+
+  /* Container-query enhancement. Without support the default stacked card
+     above remains readable and fully actionable. */
+  @container (min-width: 34rem) {
+    .resource-card {
+      grid-template-columns: fit-content(4rem) minmax(0, 1fr);
+      align-items: start;
+      padding-block: var(--space-6);
+      padding-inline: var(--space-6);
+    }
+
+    .resource-card__body {
+      grid-column: 2;
+    }
+  }
+
+  .media-card {
+    overflow: hidden;
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-lg);
+  }
+
+  .media-card__placeholder {
+    display: grid;
+    place-items: center;
+    min-block-size: 12rem;
+    padding-inline: var(--space-4);
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, var(--color-brand-600), var(--color-brand-100));
+    color: var(--color-surface-000);
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .media-card__body {
+    padding-block: var(--space-4);
+    padding-inline: var(--space-4);
+  }
+
+  .estimate-form {
+    padding-block: var(--space-5);
+    padding-inline: var(--space-5);
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-lg);
+  }
+
+  .form-field {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .form-field__label {
+    font-weight: 700;
+  }
+
+  .form-field__control {
+    inline-size: 100%;
+    min-inline-size: 0;
+    padding-block: 0.75rem;
+    padding-inline: 0.85rem;
+    color: var(--color-ink-900);
+    background: var(--color-surface-000);
+    border: var(--border-thin);
+    border-radius: var(--radius-md);
+  }
+
+  .form-field__help {
+    color: var(--color-ink-700);
+    font-size: var(--text-sm);
+  }
+
+  .site-footer {
+    padding-block: var(--space-6);
+    background: var(--color-ink-900);
+    color: var(--color-surface-000);
+  }
+
+  .site-footer a {
+    color: var(--color-surface-000);
+  }
+}
+
+@layer utilities {
+  .u-text-center { text-align: center !important; }
+
+  .u-visually-hidden {
+    position: absolute !important;
+    inline-size: 1px !important;
+    block-size: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  .u-mt-0 { margin-block-start: 0 !important; }
+  .u-mt-6 { margin-block-start: var(--space-6) !important; }
+  .u-full-width { inline-size: 100% !important; }
+}
+
+@layer states {
+  :where(a, button, input, select, textarea):focus-visible {
+    outline: var(--focus-ring);
+    outline-offset: var(--focus-offset);
+  }
+
+  .site-nav__link:hover,
+  .site-nav__link[aria-current="page"] {
+    background: var(--color-accent-500);
+    color: var(--color-ink-900);
+  }
+
+  .button:hover {
+    background: var(--button-bg-hover);
+    color: var(--button-color-hover);
+    transform: translateY(-1px);
+  }
+
+  .form-field__control[aria-invalid="true"] {
+    border-color: var(--color-danger-600);
+    box-shadow: 0 0 0 1px var(--color-danger-600);
+  }
+
+  .form-field__control:disabled,
+  .button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+
+  .is-success {
+    border-color: var(--color-success-600) !important;
+  }
+}
+
+@layer overrides {
+  /* Intentionally small. */
+}
+
+/* User preference: preserve function while removing nonessential motion. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Extra preference support for users asking for stronger contrast. */
+@media (prefers-contrast: more) {
+  :root {
+    --color-border-200: #6d766f;
+    --focus-ring: 4px solid #000;
+  }
+
+  .service-card,
+  .resource-card,
+  .media-card,
+  .estimate-form,
+  .hero-panel {
+    border-width: 2px;
+  }
+}
+
+@media print {
+  @page { margin: 0.6in; }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .site-footer,
+  .button,
+  form,
+  .no-print,
+  .skip-link {
+    display: none !important;
+  }
+
+  .site-shell,
+  .site-shell--narrow {
+    inline-size: 100%;
+    max-inline-size: none;
+  }
+
+  .section { padding-block: 0.2in; }
+
+  .service-grid,
+  .gallery-grid,
+  .resource-layout,
+  .hero-layout,
+  .estimate-layout {
+    display: block;
+  }
+
+  .service-card,
+  .callout,
+  .media-card,
+  .resource-card,
+  .hero-panel {
+    break-inside: avoid;
+    margin-block-end: 0.18in;
+    border: 1px solid #888;
+    box-shadow: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+}

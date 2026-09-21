@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tree pruning</title><desc id="desc">A worker uses a pole saw to prune an overgrown branch.</desc>
+  <rect width="800" height="600" fill="#e9f2e8"/><path d="M0 480Q400 390 800 470v130H0z" fill="#7da472"/>
+  <path d="M155 500q35-250 18-440h90q-20 230 30 440z" fill="#6d4934"/>
+  <g fill="#356b3f"><circle cx="210" cy="90" r="115"/><circle cx="350" cy="150" r="110"/><circle cx="135" cy="215" r="105"/></g>
+  <path d="M225 225q170 40 335-60" fill="none" stroke="#6d4934" stroke-width="30" stroke-linecap="round"/>
+  <g transform="translate(520 410)"><circle cy="-45" r="25" fill="#d6a06f"/><path d="M-30-15h60l25 100h-110z" fill="#f2a447"/><path d="M-20 78l-30 100M20 78l42 100" stroke="#24352a" stroke-width="21" stroke-linecap="round"/></g>
+  <path d="M505 380L390 190" stroke="#445047" stroke-width="9"/><path d="M372 166l55 22" stroke="#c96d24" stroke-width="16" stroke-linecap="round"/>
+</svg>

@@ -6,6 +6,26 @@
   <meta name="description" content="Apple Creek Tree Services responsive capstone layout practice.">
   <title>Apple Creek Tree Services</title>
   <link rel="stylesheet" href="css/apple-creek-responsive.css">
+
+  <!--
+    ASSET INVENTORY / PROVENANCE
+    - assets/hero-tree-care-wide.svg: original course-project artwork created for
+      Apple Creek; author-owned for this capstone; wide hero composition; 1600x900.
+    - assets/hero-tree-care-tall.svg: original author-owned mobile art-direction
+      crop; 800x1000. <picture> swaps compositions at 42rem.
+    - assets/tree-removal.svg, pruning.svg, storm-cleanup.svg: original
+      author-owned project illustrations; each 800x600 and used as informative
+      gallery images.
+    - All images use SVG because the flat illustration artwork stays sharp at
+      every density and is smaller than equivalent raster exports. Raster
+      srcset candidates would add duplicate downloads without adding detail;
+      responsive delivery is handled by scalable SVG plus picture art direction.
+    - No external image, icon, audio, video, animation, iframe/embed, or web-font
+      asset is used. Therefore captions, transcripts, embed titles/fallbacks,
+      autoplay controls, font licenses, and web-font preload rules are not applicable.
+    - Typography uses a local system-font stack, so there is no font download,
+      license dependency, flash of invisible text, or web-font layout shift.
+  -->
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -38,11 +58,17 @@
           </div>
         </div>
 
-        <aside class="hero-panel stack" aria-labelledby="planning-title">
-          <p class="eyebrow">Planning first</p>
-          <h2 id="planning-title">Start with the job, access, and site conditions.</h2>
-          <p>Tree work changes from property to property. The estimate form gives customers room to describe the work before scheduling.</p>
-        </aside>
+        <div class="hero-media stack">
+          <picture>
+            <source media="(max-width: 41.99rem)" srcset="assets/hero-tree-care-tall.svg">
+            <img class="hero-media__image" src="assets/hero-tree-care-wide.svg" width="1600" height="900" alt="Tree-care worker inspecting a mature tree beside a home" fetchpriority="high" decoding="async">
+          </picture>
+          <aside class="hero-panel stack" aria-labelledby="planning-title">
+            <p class="eyebrow">Planning first</p>
+            <h2 id="planning-title">Start with the job, access, and site conditions.</h2>
+            <p>Tree work changes from property to property. The estimate form gives customers room to describe the work before scheduling.</p>
+          </aside>
+        </div>
       </div>
     </section>
 
@@ -127,31 +153,31 @@
         <div class="section-heading stack">
           <p class="eyebrow">Project gallery</p>
           <h2 id="gallery-title">Flexible media layout</h2>
-          <p>Final project photos are still being selected. These placeholders keep the gallery structure responsive without inventing completed jobs.</p>
+          <p>These original illustrations show the type of work offered without presenting stock photography as completed Apple Creek jobs.</p>
         </div>
 
         <div class="gallery-grid">
           <article class="media-card">
-            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future tree removal project photo">Tree removal photo</div>
+            <img class="media-card__image" src="assets/tree-removal.svg" width="800" height="600" loading="lazy" decoding="async" alt="Worker preparing a controlled tree removal near a house">
             <div class="media-card__body stack">
               <h3>Tree Removal</h3>
-              <p>Future project image and verified description.</p>
+              <p>Planning for damaged, declining, or hazardous trees near structures.</p>
             </div>
           </article>
 
           <article class="media-card">
-            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future trimming project photo">Trimming photo</div>
+            <img class="media-card__image" src="assets/pruning.svg" width="800" height="600" loading="lazy" decoding="async" alt="Worker pruning an overgrown branch with a pole saw">
             <div class="media-card__body stack">
               <h3>Trimming &amp; Pruning</h3>
-              <p>Future project image and verified description.</p>
+              <p>Selective trimming for clearance, structure, and damaged growth.</p>
             </div>
           </article>
 
           <article class="media-card">
-            <div class="media-card__placeholder" role="img" aria-label="Placeholder for a future cleanup project photo">Cleanup photo</div>
+            <img class="media-card__image" src="assets/storm-cleanup.svg" width="800" height="600" loading="lazy" decoding="async" alt="Cut branches stacked for cleanup after a storm">
             <div class="media-card__body stack">
               <h3>Cleanup</h3>
-              <p>Future project image and verified description.</p>
+              <p>Assessment and cleanup planning for fallen limbs and storm debris.</p>
             </div>
           </article>
         </div>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Controlled tree removal</title><desc id="desc">A worker prepares a tree section for controlled removal near a house.</desc>
+  <rect width="800" height="600" fill="#e9f2e8"/><path d="M0 470Q350 410 800 460v140H0z" fill="#7da472"/>
+  <path d="M510 290h220v210H510z" fill="#fff"/><path d="M475 305l145-120 145 120z" fill="#c96d24"/>
+  <path d="M220 505q45-220 12-425h95q-22 222 35 425z" fill="#6d4934"/>
+  <g fill="#356b3f"><circle cx="275" cy="110" r="105"/><circle cx="160" cy="190" r="95"/><circle cx="375" cy="200" r="105"/></g>
+  <path d="M285 150l180 120" stroke="#f4b35d" stroke-width="10" stroke-dasharray="18 12"/>
+  <g transform="translate(410 390)"><circle cy="-45" r="25" fill="#d6a06f"/><path d="M-28-14h56l25 100h-106z" fill="#f2a447"/><path d="M-18 80l-25 95M20 80l40 95" stroke="#24352a" stroke-width="21" stroke-linecap="round"/></g>
+</svg>

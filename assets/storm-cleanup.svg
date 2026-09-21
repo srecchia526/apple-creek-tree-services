@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Storm cleanup</title><desc id="desc">Cut branches are stacked for removal after storm damage.</desc>
+  <rect width="800" height="600" fill="#dfe8e1"/><path d="M0 450Q400 380 800 450v150H0z" fill="#7da472"/>
+  <path d="M80 120q140-80 260 5M430 95q140-70 285 25" fill="none" stroke="#91a49a" stroke-width="18" stroke-linecap="round"/>
+  <g stroke="#6d4934" stroke-width="34" stroke-linecap="round"><path d="M130 480l390-170"/><path d="M210 510l360-90"/><path d="M300 525l310 5"/></g>
+  <g fill="#356b3f"><circle cx="150" cy="350" r="55"/><circle cx="275" cy="370" r="65"/><circle cx="440" cy="325" r="58"/><circle cx="575" cy="405" r="62"/></g>
+  <g transform="translate(660 390)"><circle cy="-40" r="24" fill="#d6a06f"/><path d="M-28-12h56l22 92h-100z" fill="#f2a447"/><path d="M-18 72l-23 95M18 72l38 95" stroke="#24352a" stroke-width="20" stroke-linecap="round"/></g>
+</svg>

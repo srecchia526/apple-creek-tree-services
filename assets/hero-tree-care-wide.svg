@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tree care beside a home</title>
+  <desc id="desc">A worker inspects a mature tree beside a small house in a green landscape.</desc>
+  <rect width="1600" height="900" fill="#e9f2e8"/>
+  <circle cx="1320" cy="150" r="78" fill="#f4b35d"/>
+  <path d="M0 680 Q380 570 760 665 T1600 620 V900 H0Z" fill="#7da472"/>
+  <path d="M0 760 Q420 640 850 750 T1600 690 V900 H0Z" fill="#356b3f"/>
+  <path d="M1040 455h360v270h-360z" fill="#fff"/>
+  <path d="M990 470l230-175 230 175z" fill="#c96d24"/>
+  <path d="M1185 565h85v160h-85z" fill="#284f2e"/>
+  <path d="M555 720c28-190 28-355 8-530h115c-22 190-7 363 33 530z" fill="#6d4934"/>
+  <g fill="#356b3f">
+    <circle cx="620" cy="220" r="190"/><circle cx="455" cy="320" r="145"/>
+    <circle cx="800" cy="325" r="165"/><circle cx="650" cy="410" r="160"/>
+  </g>
+  <g transform="translate(855 555)">
+    <circle cx="0" cy="-62" r="33" fill="#d6a06f"/>
+    <path d="M-38-24h76l30 142h-136z" fill="#f2a447"/>
+    <path d="M-25 112l-25 130M28 112l45 130" stroke="#24352a" stroke-width="28" stroke-linecap="round"/>
+    <path d="M-28 8l-80 80M34 8l86 48" stroke="#d6a06f" stroke-width="22" stroke-linecap="round"/>
+    <path d="M-35-77q36-36 70 0v22h-70z" fill="#f4b35d"/>
+  </g>
+</svg>

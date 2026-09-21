@@ -2,14 +2,16 @@
 
 Capstone website project for Apple Creek Tree Services.
 
-## Current responsive layout submission
+## Current media and typography submission
 
-The current root `index.html` extends the Module 2 CSS architecture into a production-ready responsive layout system.
+The current root `index.html` builds on the Module 3 responsive system with optimized original SVG media, art direction, accessible alternatives, a documented typography system, and reserved media space.
 
 - `index.html` — responsive capstone page
 - `css/apple-creek-responsive.css` — production responsive stylesheet
 - `docs/layout/layout-notes.md` — layout decisions, Grid patterns, container queries, breakpoints, preferences, and fallbacks
 - `docs/testing/testing-notes.md` — narrow/medium/wide, 200% reflow, keyboard focus, preference/fallback testing, and AI disclosure
+- `assets/` — original, author-owned SVG hero and service illustrations
+- `docs/testing/media-typography-evidence.md` — asset provenance, responsive-image decisions, accessibility, typography, layout stability, testing evidence, and AI disclosure
 
 ## Existing project structure
 

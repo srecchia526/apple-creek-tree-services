@@ -16,7 +16,7 @@ Baseline: repository commit 8c441b1412a39295d202efacc4526588e9983c51. The baseli
 Repository: https://github.com/srecchia526/apple-creek-tree-services
 Existing published URL: https://srecchia526.github.io/apple-creek-tree-services/
 
-The published URL could not be loaded in this environment because network access was denied. Results apply to a local copy of the repository and the revised files, not a verified deployed release. A draft change branch is intended for review; production publishing and a post-deployment check remain separate steps.
+The published URL was successfully checked after network access was granted. It returned HTTP 200 and still showed the original single-page version, with the same two axe rule findings. Remediation results apply to the revised local files and review branch, not to a deployed update. Production publishing and a post-deployment check remain separate steps.
 
 ## Test method and headline results
 

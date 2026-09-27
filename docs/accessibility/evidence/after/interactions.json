@@ -1,0 +1,239 @@
+{
+  "empty": {
+    "focus": "error-summary",
+    "errors": [
+      "Enter your name.Enter your email address."
+    ],
+    "invalid": 2
+  },
+  "errorAxe": {
+    "violations": [],
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  "errorLinkFocus": "name",
+  "invalidEmail": {
+    "focus": "error-summary",
+    "error": "Enter an email address such as name@example.com.",
+    "nameInvalid": null
+  },
+  "select": "Trimming and pruning",
+  "valid": {
+    "status": "Your entries passed the checks. This demonstration has not sent or saved an estimate request.",
+    "summaryHidden": true,
+    "invalid": 0,
+    "posts": []
+  },
+  "reverse": "details",
+  "staleStatusCleared": "",
+  "states": [
+    {
+      "selector": "A",
+      "color": "rgb(31, 42, 34)",
+      "bg": "rgb(244, 179, 93)",
+      "border": "rgb(31, 42, 34)",
+      "outline": "rgb(31, 42, 34) none 3px"
+    },
+    {
+      "selector": "BUTTON",
+      "color": "rgb(31, 42, 34)",
+      "bg": "rgb(244, 179, 93)",
+      "border": "rgb(31, 42, 34)",
+      "outline": "rgb(31, 42, 34) none 3px"
+    },
+    {
+      "selector": "INPUT",
+      "color": "rgb(31, 42, 34)",
+      "bg": "rgb(255, 255, 255)",
+      "border": "rgb(109, 118, 111)",
+      "outline": "rgb(31, 42, 34) none 3px"
+    }
+  ],
+  "links": [
+    {
+      "from": "index.html",
+      "href": "#main",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "services.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "gallery.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "services.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "index.html",
+      "href": "#top",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "#main",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "services.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "gallery.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "services.html",
+      "href": "#top",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "#main",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "services.html",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "gallery.html",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "gallery.html",
+      "href": "#top",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "#main",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "index.html",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "services.html",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "gallery.html",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "estimate.html",
+      "exists": true
+    },
+    {
+      "from": "estimate.html",
+      "href": "#top",
+      "exists": true
+    }
+  ],
+  "nojs": {
+    "disabled": true,
+    "notice": "This demonstration needs JavaScript to check entries. Submission is unavailable while JavaScript is off."
+  }
+}

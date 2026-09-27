@@ -10,6 +10,6 @@ The estimate form is explicitly a local demonstration. It does not send or save 
 - [Recorded evidence](docs/accessibility/evidence/)
 - [Module 4 media and typography history](docs/testing/media-typography-evidence.md)
 
-The Module 5 report supersedes earlier testing claims for the revised pages. Human capstone checks, actual browser zoom and deployed-release verification remain pending; the report includes repeatable steps. The earlier architecture demo is historical and excluded from the public-page scope.
+The Module 5 report supersedes earlier testing claims for the revised pages. Steven Recchia reports completing final personal capstone testing and fix verification. The report distinguishes that personal review from preliminary AI-assisted evidence. Detailed manual test settings and deployed-release verification remain to be recorded. The earlier architecture demo is historical and excluded from the public-page scope.
 
 GitHub Pages can serve the repository root after the reviewed change is merged. The draft branch is not a deployed preview.

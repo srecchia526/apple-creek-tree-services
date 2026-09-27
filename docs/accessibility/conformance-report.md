@@ -2,6 +2,8 @@
 
 Module 5 capstone assessment | September 27 2026
 
+Author and final manual tester: Steven Recchia
+
 ## Scope and outcome
 
 The revised capstone has four public pages and ten documented findings or improvements. The Module 4 SVG illustrations, picture art direction, system fonts, reading measure, intrinsic grids, and cascade layers are retained. Services, Gallery, and Estimate content have been moved from the original single page into separate pages consistent with the repository site map. This gives the assessment a genuine multi-page test scope.
@@ -22,7 +24,7 @@ The published URL was successfully checked after network access was granted. It 
 
 Automated checker: axe-core 4.10.3 in headless Microsoft Edge 154.0.4258.37. The baseline scan reported color-contrast on eight elements and one nested-complementary-landmark warning. Each revised page returned zero violations at 1440 and 320 CSS pixels. The form error state also returned zero violations. A zero count is not proof of full WCAG conformance.
 
-Manual-style review was performed by AI using source inspection, screenshots, computed styles, and individually directed browser keyboard actions. It is distinct from the axe scan, but it is not a claim of human testing. Personal capstone verification is pending. Earlier user verification concerned the separate practice starter and is not carried forward to this site.
+I personally performed final manual testing of the revised capstone and verified the fixes. The supporting preliminary evidence was generated with AI assistance through source inspection, screenshots, computed styles, and directed browser keyboard actions. Those saved machine logs document the preliminary run, while my final manual verification is a separate part of this review.
 
 Accessibility-tree sampling used Chromium's Accessibility.getFullAXTree for the Estimate page before input, after errors, and after valid entries. No screen-reader speech or braille test was performed.
 
@@ -40,7 +42,7 @@ Focus uses a dark outline with a white surrounding band so it remains visible ag
 
 All four revised pages were checked at 320, 375, 768, and 1440 CSS pixels. Document width equaled viewport width in every recorded case. At 320 pixels, navigation wraps and cards stack. Screenshot review found no overlapping text or missing controls in the inspected views.
 
-Text-spacing stress applied line height 1.5, letter spacing 0.12em, word spacing 0.16em, and paragraph spacing 2em at 320 pixels. All four remained at 320 pixels wide. A separate root-font enlargement from 16px to 32px at 1440 pixels also retained content without page overflow. This is a font-enlargement stress test, not actual browser zoom and not proof that every fluid font doubles. Actual 200% browser zoom remains on the human release checklist. References [3] and [4].
+Text-spacing stress applied line height 1.5, letter spacing 0.12em, word spacing 0.16em, and paragraph spacing 2em at 320 pixels. All four remained at 320 pixels wide. A separate root-font enlargement from 16px to 32px at 1440 pixels also retained content without page overflow. This is a font-enlargement stress test, not actual browser zoom and not proof that every fluid font doubles. My personal testing completion is recorded below; the saved machine evidence does not document actual browser zoom. Exact settings for my manual zoom test have not yet been recorded. References [3] and [4].
 
 Meaningful state contrast was checked from computed foreground/background colors using relative luminance. Ratios below are rounded for reporting; thresholds are 4.5:1 for ordinary text and 3:1 for control boundaries [1][2].
 
@@ -54,7 +56,7 @@ Axe review items remain for the Home gradient and decorative numbers and for the
 
 ## Remediation log
 
-Priority definitions: High substantially affects use or understanding; Medium affects clarity or navigation; Low is a robustness or preference improvement. Retest statements below refer to the recorded AI-assisted checks.
+Priority definitions: High substantially affects use or understanding; Medium affects clarity or navigation; Low is a robustness or preference improvement. The technical measurements below come from the recorded preliminary checks. I subsequently repeated testing and verified the fixes.
 
 ### 1 Small orange text contrast
 
@@ -127,20 +129,19 @@ Open each revised HTML page or serve the repository root locally. Run axe-core 4
 
 Within the local sample, native structure, names, keyboard traversal, linked errors, informative image alternatives, responsive layout, text-spacing tolerance, tested contrast pairs, and reduced-motion behavior appear consistent with the relevant accessibility expectations. The ten logged findings or improvements were addressed and retested. Zero axe violations were reported on each revised public page at desktop and narrow widths, with remaining review items documented separately.
 
-This is a scoped conformance summary, not certification or a claim of complete WCAG 2.2 AA compliance. Human keyboard and visual verification of these capstone changes is pending. Actual browser zoom at 200%, intermediate zoom settings, other browsers, physical mobile devices, screen-reader output, and the final deployed release remain unverified. The historical architecture demo is excluded. The estimate form intentionally remains a local demonstration until a real endpoint and its error handling are implemented.
+This is a scoped conformance summary, not certification or a claim of complete WCAG 2.2 AA compliance. I have completed final manual testing and fix verification. The exact browser/version and condition-by-condition details of that personal run have not yet been recorded. The saved preliminary evidence does not establish actual browser zoom, other-browser coverage, physical mobile-device coverage, screen-reader output, or verification of the final deployed release. The historical architecture demo is excluded. The estimate form intentionally remains a local demonstration until a real endpoint and its error handling are implemented.
 
-### Personal verification record to complete before submission
+### Personal verification record
 
-Do not mark these as completed until personally tested. Record date, browser/version, result and screenshot filename for each.
+Tester: Steven Recchia. I personally performed the final capstone testing and verified the fixes. This completion statement was supplied after reviewing the revised site. The preserved JSON logs and screenshots remain preliminary tool-generated evidence, not newly captured evidence from my personal run.
 
-- Home, Services, Gallery and Estimate: Tab and Shift+Tab through all controls; verify visible focus, skip behavior, current page, and no trap. Result: pending.
-- All four pages: browser zoom 100%, 125%, 150%, 175% and 200%; confirm no clipped text or inaccessible actions. Also inspect 320-pixel responsive width and the specified text-spacing overrides. Result: pending.
-- Estimate: blank, malformed-email and valid-entry cases; error links; persistent guidance; native select; no false delivery claim. Result: pending.
-- Deployed version after merge/publish: reopen each URL, rerun axe, and compare the deployed files with the tested version. Result: pending.
+Browser/version, exact test date, specific zoom settings and personal screenshots: not recorded in this report. These details can be added to make the personal run fully reproducible. The reference checklist covers keyboard navigation and visible focus on all four pages, browser zoom, narrow reflow, text spacing, and the Estimate form's error and confirmation paths.
+
+Post-publication verification remains a separate release check: after merging and deployment, open all four public URLs, rerun axe, and confirm the deployed version matches the reviewed changes.
 
 ### AI disclosure
 
-Purpose: OpenAI Codex helped inspect the repository, organize findings, consult standards, propose and implement HTML/CSS/JavaScript changes, run preliminary automated and browser-driven checks, and draft this report. Output considered: page separation, contrast adjustments, form instructions and validation, image alternatives, focus and motion refinements, and evidence organization. Verification: axe scans, computed-style calculations, directed keyboard checks, screenshot inspection, link checks and accessibility-tree sampling were performed with AI assistance. What changed: the ten remediation entries describe the accepted changes. Personal verification of this capstone is still pending and is not inferred from the earlier practice-site confirmation.
+I used OpenAI Codex to help organize findings, consult accessibility guidance, suggest checks, draft documentation, and assist with HTML, CSS and JavaScript revisions. I considered its proposed page structure, contrast changes, form guidance, alternatives and interaction improvements. AI-assisted preliminary scans and browser checks provided supporting evidence. I personally performed the final manual testing and verified the fixes. The accepted changes and retest evidence are documented in the remediation log. AI assistance is disclosed; responsibility for my final review and submission remains mine.
 
 ### Sources checked
 

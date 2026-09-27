@@ -1,0 +1,440 @@
+{
+  "variant": "before",
+  "browser": "154.0.4258.37",
+  "pages": [
+    {
+      "file": "index.html",
+      "axe": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                "a[aria-current=\"page\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.03 (foreground color: #1f2a22, background color: #c96d24, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".hero-panel > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #c96d24, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#services > .site-shell.stack > .section-heading.stack > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #c96d24, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#resources > .site-shell.stack > .section-heading.stack > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.45 (foreground color: #c96d24, background color: #f7f8f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".resource-sidebar > .resource-shell > .resource-card > .resource-card__body.stack > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #c96d24, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".resource-main > .resource-shell > .resource-card > .resource-card__body.stack > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #c96d24, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#gallery > .site-shell.stack > .section-heading.stack > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #c96d24, background color: #ffffff, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".estimate-layout > .stack:nth-child(1) > .eyebrow"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.21 (foreground color: #c96d24, background color: #e9f2e8, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "landmark-complementary-is-top-level",
+          "impact": "moderate",
+          "nodes": [
+            {
+              "target": [
+                ".resource-sidebar"
+              ],
+              "summary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "structure": {
+        "title": "Apple Creek Tree Services",
+        "headings": [
+          "H1: Professional tree care without a one-size-fits-all layout.",
+          "H2: Start with the job, access, and site conditions.",
+          "H2: Core tree-care services",
+          "H3: Tree Removal",
+          "H3: Trimming & Pruning",
+          "H3: Stump Grinding",
+          "H3: Storm Cleanup",
+          "H2: The same resource card in two layout contexts",
+          "H3: Take a few property photos",
+          "H3: Describe what is around the work area",
+          "H2: Flexible media layout",
+          "H3: Tree Removal",
+          "H3: Trimming & Pruning",
+          "H3: Cleanup",
+          "H2: Tell us what you are working with.",
+          "H3: Storm damage?"
+        ],
+        "landmarks": [
+          {
+            "tag": "HEADER",
+            "label": null
+          },
+          {
+            "tag": "NAV",
+            "label": "Primary navigation"
+          },
+          {
+            "tag": "MAIN",
+            "label": null
+          },
+          {
+            "tag": "ASIDE",
+            "label": null
+          },
+          {
+            "tag": "ASIDE",
+            "label": "Quick resource"
+          },
+          {
+            "tag": "FOOTER",
+            "label": null
+          }
+        ],
+        "current": [
+          {
+            "text": "Home",
+            "href": "#home"
+          }
+        ],
+        "images": [
+          {
+            "src": "assets/hero-tree-care-wide.svg",
+            "alt": "Tree-care worker inspecting a mature tree beside a home",
+            "loaded": true
+          },
+          {
+            "src": "assets/tree-removal.svg",
+            "alt": "Worker preparing a controlled tree removal near a house",
+            "loaded": false
+          },
+          {
+            "src": "assets/pruning.svg",
+            "alt": "Worker pruning an overgrown branch with a pole saw",
+            "loaded": false
+          },
+          {
+            "src": "assets/storm-cleanup.svg",
+            "alt": "Cut branches stacked for cleanup after a storm",
+            "loaded": false
+          }
+        ],
+        "form": [
+          {
+            "id": "name",
+            "labels": [
+              "Name"
+            ],
+            "required": true,
+            "description": null,
+            "border": "rgb(213, 221, 212)"
+          },
+          {
+            "id": "email",
+            "labels": [
+              "Email"
+            ],
+            "required": true,
+            "description": null,
+            "border": "rgb(213, 221, 212)"
+          },
+          {
+            "id": "phone",
+            "labels": [
+              "Phone"
+            ],
+            "required": false,
+            "description": null,
+            "border": "rgb(213, 221, 212)"
+          },
+          {
+            "id": "service",
+            "labels": [
+              "Service"
+            ],
+            "required": false,
+            "description": null,
+            "border": "rgb(213, 221, 212)"
+          },
+          {
+            "id": "details",
+            "labels": [
+              "Job details"
+            ],
+            "required": false,
+            "description": null,
+            "border": "rgb(213, 221, 212)"
+          }
+        ]
+      },
+      "firstTab": "Skip to main content",
+      "skip": {
+        "tag": "BODY",
+        "id": ""
+      },
+      "afterSkip": {
+        "tag": "A",
+        "text": "Request an Estimate"
+      },
+      "keyboard": [
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Skip to main content",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Apple Creek Tree Services",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Home",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(201, 109, 36)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Services",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Resources",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Gallery",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Request Estimate",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Request an Estimate",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(40, 79, 46)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "View Services",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Ask about removal",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Ask about trimming",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Ask about stump work",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Describe storm damage",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Open estimate form",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Request an estimate",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(40, 79, 46)",
+          "shadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "id": "name",
+          "name": "",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "id": "email",
+          "name": "",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "INPUT",
+          "id": "phone",
+          "name": "",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "SELECT",
+          "id": "service",
+          "name": "Tree removal\n                Trimming and pruning\n               ",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "TEXTAREA",
+          "id": "details",
+          "name": "",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "name": "Send Request",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(40, 79, 46)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Back to top",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none"
+        },
+        {
+          "tag": "BODY",
+          "id": "",
+          "name": "Skip to main content\n\n  \n    \n      Apple Creek Tree Services\n   ",
+          "outline": "rgb(31, 42, 34) none 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "name": "Skip to main content",
+          "outline": "rgb(201, 109, 36) solid 3px",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none"
+        }
+      ],
+      "viewports": [
+        {
+          "width": 320,
+          "scroll": 320
+        },
+        {
+          "width": 375,
+          "scroll": 375
+        },
+        {
+          "width": 768,
+          "scroll": 768
+        },
+        {
+          "width": 1440,
+          "scroll": 1440
+        }
+      ],
+      "spacing": {
+        "width": 320,
+        "scroll": 320
+      },
+      "text200": {
+        "rootFont": "32px",
+        "width": 1440,
+        "scroll": 1440
+      },
+      "motion": {
+        "scroll": "auto",
+        "transform": "matrix(1, 0, 0, 1, 0, -1)",
+        "transition": "1e-05s"
+      }
+    }
+  ],
+  "live": {
+    "error": "page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://srecchia526.github.io/apple-creek-tree-services/\nCall log:\n\u001b[2m  - navigating to \"https://srecchia526.github.io/apple-creek-tree-services/\", waiting until \"load\"\u001b[22m\n"
+  }
+}

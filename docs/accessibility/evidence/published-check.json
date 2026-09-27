@@ -1,0 +1,53 @@
+{
+  "status": 200,
+  "url": "https://srecchia526.github.io/apple-creek-tree-services/",
+  "title": "Apple Creek Tree Services",
+  "structure": {
+    "headings": [
+      "Professional tree care without a one-size-fits-all layout.",
+      "Start with the job, access, and site conditions.",
+      "Core tree-care services",
+      "The same resource card in two layout contexts",
+      "Flexible media layout",
+      "Tell us what you are working with."
+    ],
+    "navigation": [
+      {
+        "text": "Home",
+        "href": "#home"
+      },
+      {
+        "text": "Services",
+        "href": "#services"
+      },
+      {
+        "text": "Resources",
+        "href": "#resources"
+      },
+      {
+        "text": "Gallery",
+        "href": "#gallery"
+      },
+      {
+        "text": "Request Estimate",
+        "href": "#estimate"
+      }
+    ],
+    "formAction": "#"
+  },
+  "axe": {
+    "violations": [
+      {
+        "id": "color-contrast",
+        "count": 8
+      },
+      {
+        "id": "landmark-complementary-is-top-level",
+        "count": 1
+      }
+    ],
+    "incomplete": [
+      "color-contrast"
+    ]
+  }
+}

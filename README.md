@@ -1,24 +1,15 @@
 # Apple Creek Tree Services
 
-Capstone website project for Apple Creek Tree Services.
+## Module 5 accessibility review
 
-## Current media and typography submission
+Four public capstone pages: Home (`index.html`), Services (`services.html`), Gallery (`gallery.html`), and Estimate (`estimate.html`). Open `index.html` or serve the repository root with a local static server.
 
-The current root `index.html` builds on the Module 3 responsive system with optimized original SVG media, art direction, accessible alternatives, a documented typography system, and reserved media space.
+The estimate form is explicitly a local demonstration. It does not send or save requests. JavaScript provides validation and linked errors; with JavaScript off, the action is disabled and explained.
 
-- `index.html` — responsive capstone page
-- `css/apple-creek-responsive.css` — production responsive stylesheet
-- `docs/layout/layout-notes.md` — layout decisions, Grid patterns, container queries, breakpoints, preferences, and fallbacks
-- `docs/testing/testing-notes.md` — narrow/medium/wide, 200% reflow, keyboard focus, preference/fallback testing, and AI disclosure
-- `assets/` — original, author-owned SVG hero and service illustrations
-- `docs/testing/media-typography-evidence.md` — asset provenance, responsive-image decisions, accessibility, typography, layout stability, testing evidence, and AI disclosure
+- [Conformance report and test scope](docs/accessibility/conformance-report.md)
+- [Recorded evidence](docs/accessibility/evidence/)
+- [Module 4 media and typography history](docs/testing/media-typography-evidence.md)
 
-## Existing project structure
+The Module 5 report supersedes earlier testing claims for the revised pages. Steven Recchia reports completing final personal capstone testing and fix verification. The report distinguishes that personal review from preliminary AI-assisted evidence. His personal checks used Google Chrome and included keyboard navigation, 200% browser zoom, narrow-screen layout and form errors. Chrome version, exact test date and narrow viewport width were not supplied. Deployed-release verification remains pending. The earlier architecture demo is historical and excluded from the public-page scope.
 
-- `css/apple-creek-architecture.css` — Module 2 CSS architecture retained as reference
-- `docs/planning/` — content inventory and site map
-- `docs/architecture/` — Module 2 architecture notes and test page
-- `docs/layout/` — responsive layout notes
-- `docs/testing/` — testing evidence and verification notes
-
-The repository is organized so the static site can be published with GitHub Pages from the repository root.
+GitHub Pages can serve the repository root after the reviewed change is merged. The draft branch is not a deployed preview.

@@ -677,3 +677,33 @@
     font-size: 9pt;
   }
 }
+
+
+/* Module 5 accessibility refinements retain the existing layer architecture. */
+@layer overrides {
+  :root {
+    --button-bg-hover: #f4b35d;
+    --focus-ring: 3px solid #111111;
+  }
+  .eyebrow { color: #914509; }
+  .site-nav__link:hover, .site-nav__link[aria-current="page"] {
+    background: #f4b35d; color: #1f2a22;
+  }
+  .site-nav__link[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; }
+  .form-field__control { border-color: #6d766f; }
+  :where(a, button, input, select, textarea):focus-visible {
+    outline: var(--focus-ring); outline-offset: 3px; box-shadow: 0 0 0 7px #ffffff;
+  }
+  main:focus-visible { outline: 3px solid #111111; outline-offset: -3px; }
+  .error-summary { padding: 1rem; border: 2px solid #a43a32; }
+  .error-summary:focus { outline: 3px solid #111111; outline-offset: 3px; }
+  .error-summary ul { padding-inline-start: 1.5rem; }
+  .error-summary h2 { font-size: 1.25rem; }
+  .field-error { color: #a43a32; font-weight: 600; }
+  [hidden] { display: none !important; }
+  :where(h1,h2,h3,p,a,label) { overflow-wrap: anywhere; }
+  @media (prefers-reduced-motion: reduce) { .button:hover { transform: none; } }
+}
+
+@layer overrides { .resource-card__marker { background: #f4b35d; } }
+

@@ -1,0 +1,158 @@
+{
+  "review_date": "2026-10-04",
+  "method": "Python standard-library HTML source inspection and XML parsing; not a browser audit",
+  "result": "passed",
+  "unique_titles_descriptions": true,
+  "one_h1_and_heading_progression": true,
+  "local_links_fragments_images": true,
+  "sitemap_matches_canonicals": true,
+  "home_social_matches_metadata": true,
+  "pages": {
+    "index.html": {
+      "sha256": "dba9e6071bdcf3898ed0efd226a160fbe6c8fff5c2cebab696e8e3a5d98415bf",
+      "title": "Tree Care Planning | Apple Creek Tree Services",
+      "description": "Explore tree-care planning, service illustrations, and an estimate-form demonstration on the Apple Creek Tree Services student capstone website.",
+      "canonical": "https://srecchia526.github.io/apple-creek-tree-services/",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tree care built around your property."
+        },
+        {
+          "level": 2,
+          "text": "Start with the job, access, and site conditions."
+        },
+        {
+          "level": 2,
+          "text": "Prepare for a tree-care estimate"
+        },
+        {
+          "level": 3,
+          "text": "Take a few property photos"
+        },
+        {
+          "level": 3,
+          "text": "Describe what is around the work area"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/hero-tree-care-wide.svg",
+          "alt": "Illustration of a tree-care worker inspecting a mature tree",
+          "width": "1600",
+          "height": "900"
+        }
+      ],
+      "local_link_targets": "passed"
+    },
+    "services.html": {
+      "sha256": "65797964c8a34b039a9ed8b60d08ef5c993005667a80aa90dd394f0a2732bc6e",
+      "title": "Tree-Care Services | Apple Creek Tree Services",
+      "description": "Read about tree removal, trimming and pruning, stump grinding, and storm cleanup planning in the Apple Creek Tree Services student capstone.",
+      "canonical": "https://srecchia526.github.io/apple-creek-tree-services/services.html",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Core tree-care services"
+        },
+        {
+          "level": 2,
+          "text": "Tree Removal"
+        },
+        {
+          "level": 2,
+          "text": "Trimming & Pruning"
+        },
+        {
+          "level": 2,
+          "text": "Stump Grinding"
+        },
+        {
+          "level": 2,
+          "text": "Storm Cleanup"
+        }
+      ],
+      "images": [],
+      "local_link_targets": "passed"
+    },
+    "gallery.html": {
+      "sha256": "2ae75c9899ad045a793759103618bb2f5f956b5b402d3f9d16e15fd723fb4bdc",
+      "title": "Service Illustrations | Apple Creek Tree Services",
+      "description": "View original tree removal, pruning, and storm cleanup illustrations in the Apple Creek student capstone. These are illustrations, not completed-job photos.",
+      "canonical": "https://srecchia526.github.io/apple-creek-tree-services/gallery.html",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Tree-care service illustrations"
+        },
+        {
+          "level": 2,
+          "text": "Tree Removal"
+        },
+        {
+          "level": 2,
+          "text": "Trimming & Pruning"
+        },
+        {
+          "level": 2,
+          "text": "Storm Cleanup"
+        }
+      ],
+      "images": [
+        {
+          "src": "assets/tree-removal.svg",
+          "alt": "Illustration: worker preparing a controlled tree removal near a house",
+          "width": "800",
+          "height": "600"
+        },
+        {
+          "src": "assets/pruning.svg",
+          "alt": "Illustration: worker pruning an overgrown branch with a pole saw",
+          "width": "800",
+          "height": "600"
+        },
+        {
+          "src": "assets/storm-cleanup.svg",
+          "alt": "Illustration: cut branches stacked for cleanup after a storm",
+          "width": "800",
+          "height": "600"
+        }
+      ],
+      "local_link_targets": "passed"
+    },
+    "estimate.html": {
+      "sha256": "20d4dbade18ca96b8b75d16a0117296bef8dc45b07f6b5e68bbf2b9214402adc",
+      "title": "Estimate Form Demo | Apple Creek Tree Services",
+      "description": "Practice describing tree work and property access in the Apple Creek capstone estimate form. Entries are checked locally; nothing is sent or saved.",
+      "canonical": "https://srecchia526.github.io/apple-creek-tree-services/estimate.html",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Prepare your estimate request"
+        },
+        {
+          "level": 2,
+          "text": "Storm damage?"
+        },
+        {
+          "level": 2,
+          "text": "Check the following fields"
+        }
+      ],
+      "images": [],
+      "local_link_targets": "passed"
+    }
+  },
+  "live_before_edit": {
+    "base_url": "https://srecchia526.github.io/apple-creek-tree-services/",
+    "pages": {
+      "index.html": 200,
+      "services.html": 200,
+      "gallery.html": 200,
+      "estimate.html": 200
+    },
+    "hero_image_status": 200,
+    "hero_image_type": "image/svg+xml"
+  },
+  "sitemap_sha256": "43c09fe029f5dd4431e6d71fa363de24a860f86b46bad12e4571f86e62dd9af0"
+}

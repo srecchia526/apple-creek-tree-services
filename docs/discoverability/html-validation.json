@@ -1,0 +1,34 @@
+[
+  {
+    "file": "index.html",
+    "validator": "https://validator.w3.org/nu/",
+    "result": {
+      "version": "26.10.2",
+      "messages": []
+    }
+  },
+  {
+    "file": "services.html",
+    "validator": "https://validator.w3.org/nu/",
+    "result": {
+      "version": "26.10.2",
+      "messages": []
+    }
+  },
+  {
+    "file": "gallery.html",
+    "validator": "https://validator.w3.org/nu/",
+    "result": {
+      "version": "26.10.2",
+      "messages": []
+    }
+  },
+  {
+    "file": "estimate.html",
+    "validator": "https://validator.w3.org/nu/",
+    "result": {
+      "version": "26.10.2",
+      "messages": []
+    }
+  }
+]

@@ -27,11 +27,14 @@
     - Typography uses a local system-font stack, so there is no font download,
       license dependency, flash of invisible text, or web-font layout shift.
   -->
+<!-- Defer lets the form markup load before the validation script looks up its controls. -->
 <script src="js/estimate.js" defer></script>
 </head>
 <body id="top">
+  <!-- I keep the skip link first so keyboard users can go straight to the main content. -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Shared navigation uses the same destinations on every page; aria-current marks this page. -->
   <header class="site-header">
     <div class="site-shell site-nav">
       <a class="site-nav__brand" href="index.html">Apple Creek Tree Services</a>
@@ -45,6 +48,7 @@
     </div>
   </header>
 
+  <!-- The main region can receive skip-link focus without adding another normal Tab stop. -->
   <main id="main" tabindex="-1">
     <section class="section section--accent" id="estimate" aria-labelledby="estimate-title">
       <div class="site-shell estimate-layout">
@@ -59,10 +63,12 @@
           </div>
         </div>
 
+        <!-- This form checks entries locally. Persistent instructions explain required fields and demo limits. -->
         <form class="estimate-form stack" aria-labelledby="estimate-title" aria-describedby="form-instructions form-demo">
           <p id="form-instructions">Name and email are required. All other fields are optional.</p>
 <p id="form-demo">Demonstration only. Nothing is sent or saved. Do not use this form to request urgent help.</p>
 <noscript><p>This demonstration needs JavaScript to check entries. Submission is unavailable while JavaScript is off.</p></noscript>
+<!-- The script focuses this summary after errors; its links lead to the affected fields. -->
 <div id="error-summary" class="error-summary" tabindex="-1" hidden>
 <h2>Check the following fields</h2>
 <ul id="error-list"></ul>
@@ -103,13 +109,16 @@
             </div>
           </div>
 
+          <!-- I leave the button disabled until JavaScript loads to prevent accidental form posting. -->
           <button class="button" type="submit" disabled>Check request details</button>
-        <p id="form-status" role="status" aria-atomic="true"></p>
+        <!-- A polite status region announces the local result without claiming that a request was sent. -->
+<p id="form-status" role="status" aria-atomic="true"></p>
 </form>
       </div>
     </section>
   </main>
 
+  <!-- I keep the student-project notice visible and provide a route back to the top. -->
   <footer class="site-footer">
     <div class="site-shell footer-layout">
       <div class="stack">

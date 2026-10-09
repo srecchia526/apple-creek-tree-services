@@ -4,8 +4,10 @@
    Extended from the Module 2 CSS architecture.
    Layer order is intentionally preserved.
    ========================================================= */
+/* I keep broad rules early and interaction or exception rules later to avoid specificity fights. */
 @layer reset, base, layout, components, utilities, states, overrides;
 
+/* Reset browser defaults while keeping native controls and semantic HTML. */
 @layer reset {
   *,
   *::before,
@@ -42,6 +44,7 @@
   }
 }
 
+/* Shared colors, spacing, and type tokens keep the four pages consistent. */
 @layer base {
   :root {
     /* Existing Module 2 design-token direction */
@@ -247,6 +250,7 @@
   }
 }
 
+/* Reusable navigation, cards, buttons, and form styles build on the layout layer. */
 @layer components {
   .skip-link {
     position: absolute;
@@ -539,9 +543,11 @@
   }
 }
 
+/* Small utilities handle single-purpose exceptions without duplicating component styles. */
 @layer utilities {
   .u-text-center { text-align: center !important; }
 
+  /* I hide supporting text visually while keeping it available to assistive technology. */
   .u-visually-hidden {
     position: absolute !important;
     inline-size: 1px !important;
@@ -549,7 +555,7 @@
     padding: 0 !important;
     margin: -1px !important;
     overflow: hidden !important;
-    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
     white-space: nowrap !important;
     border: 0 !important;
   }
@@ -559,6 +565,7 @@
   .u-full-width { inline-size: 100% !important; }
 }
 
+/* Focus, hover, current-page, and error states provide feedback beyond the default appearance. */
 @layer states {
   :where(a, button, input, select, textarea):focus-visible {
     outline: var(--focus-ring);
@@ -627,6 +634,7 @@
   }
 }
 
+/* Printed pages prioritize readable service information over navigation and form controls. */
 @media print {
   @page { margin: 0.6in; }
 

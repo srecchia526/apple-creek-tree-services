@@ -40,8 +40,10 @@
   -->
 </head>
 <body id="top">
+  <!-- I keep the skip link first so keyboard users can go straight to the main content. -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <!-- Shared navigation uses the same destinations on every page; aria-current marks this page. -->
   <header class="site-header">
     <div class="site-shell site-nav">
       <a class="site-nav__brand" href="index.html">Apple Creek Tree Services</a>
@@ -55,20 +57,22 @@
     </div>
   </header>
 
+  <!-- The main region can receive skip-link focus without adding another normal Tab stop. -->
   <main id="main" tabindex="-1">
     <section class="hero section" id="home">
       <div class="site-shell hero-layout">
         <div class="stack">
           <p class="eyebrow">Tree care built around the property</p>
           <h1>Tree care built around your property.</h1>
-          <p class="hero__lede">Apple Creek Tree Services helps property owners plan tree removal, trimming, stump work, and storm cleanup with clear information and an easy estimate request.</p>
+          <p class="hero__lede">Apple Creek Tree Services helps property owners plan tree removal, trimming, stump work, and storm cleanup with clear information and a local estimate-form demonstration.</p>
           <div class="cluster">
-            <a class="button" href="estimate.html">Request an Estimate</a>
+            <a class="button" href="estimate.html">Try the Estimate Demo</a>
             <a class="button button--secondary" href="services.html">View Tree-Care Services</a>
           </div>
         </div>
 
         <div class="hero-media stack">
+          <!-- I swap the hero composition on narrow screens; both versions share one accurate alternative. -->
           <picture>
             <source width="800" height="1000" media="(max-width: 41.99rem)" srcset="assets/hero-tree-care-tall.svg">
             <img class="hero-media__image" src="assets/hero-tree-care-wide.svg" width="1600" height="900" alt="Illustration of a tree-care worker inspecting a mature tree" fetchpriority="high" decoding="async">
@@ -76,12 +80,13 @@
           <div class="hero-panel stack">
             <p class="eyebrow">Planning first</p>
             <h2 id="planning-title">Start with the job, access, and site conditions.</h2>
-            <p>Tree work changes from property to property. The estimate form gives customers room to describe the work before scheduling.</p>
+            <p>Tree work changes from property to property. The estimate demonstration gives visitors room to describe sample work. It does not send a request or schedule a service.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- These planning cards also demonstrate how the same component adapts to different available widths. -->
     <section class="section section--muted" id="resources" aria-labelledby="resources-title">
       <div class="site-shell stack">
         <div class="section-heading stack">
@@ -99,7 +104,7 @@
                   <p class="eyebrow">Before the estimate</p>
                   <h3>Take a few property photos</h3>
                   <p>Wide and close views can help explain access, nearby structures, and the tree or stump involved.</p>
-                  <a class="button button--secondary" href="estimate.html">Open estimate form</a>
+                  <a class="button button--secondary" href="estimate.html">Open estimate demo</a>
                 </div>
               </article>
             </div>
@@ -113,7 +118,7 @@
                   <p class="eyebrow">Planning information</p>
                   <h3>Describe what is around the work area</h3>
                   <p>Driveways, fences, sheds, utility lines, slopes, and tight access can affect how a job is approached.</p>
-                  <a class="button" href="estimate.html">Request an estimate</a>
+                  <a class="button" href="estimate.html">Try the estimate demo</a>
                 </div>
               </article>
             </div>
@@ -124,6 +129,7 @@
 
     </main>
 
+  <!-- I keep the student-project notice visible and provide a route back to the top. -->
   <footer class="site-footer">
     <div class="site-shell footer-layout">
       <div class="stack">
